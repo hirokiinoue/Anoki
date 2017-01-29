@@ -2,16 +2,12 @@ package retribuzioni;
 
 public abstract class Dipendenti {
 
-	private String nome;
-	private String ruolo;
-	private double stipendioBase;
-	private String team;
+	private String nome = "";
+	private double stipendioBase = 0.0;
 	
-	public Dipendenti(String nome, String ruolo, double stipendioBase, String team){
+	public Dipendenti(String nome, double stipendioBase){
 		this.nome = nome;
-		this.ruolo = ruolo;
 		this.stipendioBase = stipendioBase;
-		this.team = team;
 	}
 
 	public String getNome() {
@@ -22,14 +18,6 @@ public abstract class Dipendenti {
 		this.nome = nome;
 	}
 
-	public String getRuolo() {
-		return ruolo;
-	}
-
-	public void setRuolo(String ruolo) {
-		this.ruolo = ruolo;
-	}
-
 	public double getStipendioBase() {
 		return stipendioBase;
 	}
@@ -38,12 +26,8 @@ public abstract class Dipendenti {
 		this.stipendioBase = stipendioBase;
 	}
 
-	public String getTeam() {
-		return team;
+	public double getSalary() {
+		
+		return stipendioBase;
 	}
-
-	public void setTeam(String team) {
-		this.team = team;
-	}
-
 }

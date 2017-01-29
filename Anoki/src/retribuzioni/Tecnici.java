@@ -1,10 +1,14 @@
 package retribuzioni;
 
+import static constants.BaseSalaryConstants.*;
+
 public class Tecnici extends Dipendenti{
 
-	private static final String RUOLO = "tecnici";
-	
-	public Tecnici(String nome, double stipendioBase, String team) {
-		super(nome, RUOLO, stipendioBase, team);
+	public Tecnici(String nome) {
+		super(nome, BASESALARY_TECNICI);
+	}
+
+	public double getSalary() {
+		return super.getSalary();
 	}
 }
